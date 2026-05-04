@@ -5,6 +5,8 @@ import '../../features/onboarding/onboarding_screen.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings setting) {
+    // this arguments to passed in any screen like this  ( arguments as ClassName )
+    final arguments = setting.arguments;
     switch (setting.name) {
       case Routers.onboardingScreen:
         {
