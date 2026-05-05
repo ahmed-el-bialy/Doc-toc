@@ -1,3 +1,4 @@
+import 'package:doc_tok/core/helpers/spacing.dart';
 import 'package:doc_tok/core/theming/styles.dart';
 import 'package:doc_tok/features/onboarding/widgets/doc_logo_and_name.dart';
 import 'package:doc_tok/features/onboarding/widgets/doctor_image_and_text.dart';
@@ -19,7 +20,7 @@ class OnboardingScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const DocLogoAndName(),
-                SizedBox(height: 20.h),
+                verticalSpacing(20),
                 const DoctorImageAndText(),
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 15.w),
@@ -30,7 +31,7 @@ class OnboardingScreen extends StatelessWidget {
                         style: TextStyles.grey400Weight,
                         textAlign: TextAlign.center,
                       ),
-                      SizedBox(height: 20.h),
+                      verticalSpacing(20),
                       const GetStartedButton(),
                     ],
                   ),
