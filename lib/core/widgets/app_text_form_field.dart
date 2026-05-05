@@ -1,6 +1,5 @@
 import 'package:doc_tok/core/theming/colors.dart';
 import 'package:doc_tok/core/theming/styles.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -55,7 +54,7 @@ class AppTextFormField extends StatelessWidget {
               borderRadius: BorderRadius.circular(16),
               borderSide: BorderSide(
                 color: ColorsManger.lighterGrey,
-                width: 1.3,
+                width: 1.3.w,
               ),
             ),
 
@@ -63,14 +62,14 @@ class AppTextFormField extends StatelessWidget {
             errorBorder ??
             OutlineInputBorder(
               borderRadius: BorderRadius.circular(16),
-              borderSide: const BorderSide(color: Colors.red, width: 1.3),
+              borderSide:  BorderSide(color: Colors.red, width: 1.3.w),
             ),
 
         focusedBorder:
             focusedBorder ??
             OutlineInputBorder(
               borderRadius: BorderRadius.circular(16),
-              borderSide: BorderSide(color: ColorsManger.mainBlue, width: 1.3),
+              borderSide: BorderSide(color: ColorsManger.mainBlue, width: 1.3.w),
             ),
       ),
     );

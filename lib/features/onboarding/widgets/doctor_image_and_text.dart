@@ -23,7 +23,7 @@ class DoctorImageAndText extends StatelessWidget {
               ],
             ),
           ),
-          child: Image.asset("assets/images/start_background.png"),
+          child: Image.asset("assets/images/start_background.png",fit: BoxFit.cover,),
         ),
         Positioned(
           bottom: 30.h,

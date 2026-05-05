@@ -34,7 +34,7 @@ class AppTextButton extends StatelessWidget {
         padding: WidgetStateProperty.all(
           EdgeInsets.symmetric(
             horizontal: horizontalPadding?.w ?? 12.w,
-            vertical: verticalPadding ?? 14.h,
+            vertical: verticalPadding?.h ?? 14.h,
           ),
         ),
         shape: WidgetStateProperty.all(
@@ -49,7 +49,7 @@ class AppTextButton extends StatelessWidget {
           Size(buttonWidth?.w ?? double.maxFinite, buttonHeight?.h ?? 52.h),
         ),
       ),
-      onPressed: () {},
+      onPressed: onPressed,
       child: Text(
         buttonText,
         style: textStyle ?? TextStyles.font16White600Weight,

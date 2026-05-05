@@ -5,7 +5,8 @@ import 'package:doc_tok/core/theming/colors.dart';
 import 'package:doc_tok/core/theming/styles.dart';
 import 'package:doc_tok/core/widgets/app_text_button.dart';
 import 'package:doc_tok/core/widgets/app_text_form_field.dart';
-import 'package:flutter/cupertino.dart';
+import 'package:doc_tok/features/login/ui/widgets/already_have_account_text.dart';
+import 'package:doc_tok/features/login/ui/widgets/terms_and_policy_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -63,11 +64,17 @@ class _LoginScreenState extends State<LoginScreen> {
                                 isSecure;
                               });
                             },
-                            icon: Icon(
-                              isSecure == true
-                                  ? Icons.visibility_off
-                                  : Icons.visibility,
-                              color: ColorsManger.darkBlue,
+                            icon: Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 6.0,
+                              ),
+                              child: Icon(
+                                isSecure == true
+                                    ? Icons.visibility_off
+                                    : Icons.visibility,
+                                color: ColorsManger.darkBlue,
+                                size: 14.sp,
+                              ),
                             ),
                           ),
                         ),
@@ -87,6 +94,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                         verticalSpacing(18),
                         AppTextButton(buttonText: 'Login', onPressed: () {}),
+                        verticalSpacing(18),
+                        TermsAndPolicyText(),
+                        verticalSpacing(18),
+                        AlreadyHaveAccountText(),
                       ],
                     ),
                   ),
