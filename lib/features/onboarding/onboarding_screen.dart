@@ -28,7 +28,7 @@ class OnboardingScreen extends StatelessWidget {
                     children: [
                       Text(
                         "Manage and schedule all of your medical appointments easily with Doctoc to get a new experience.",
-                        style: TextStyles.grey400Weight,
+                        style: TextStyles.font15Grey400Weight,
                         textAlign: TextAlign.center,
                       ),
                       verticalSpacing(20),
