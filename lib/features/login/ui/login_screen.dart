@@ -3,6 +3,7 @@ import 'package:doc_tok/core/helpers/spacing.dart';
 import 'package:doc_tok/core/routing/routes.dart';
 import 'package:doc_tok/core/theming/colors.dart';
 import 'package:doc_tok/core/theming/styles.dart';
+import 'package:doc_tok/core/widgets/app_text_button.dart';
 import 'package:doc_tok/core/widgets/app_text_form_field.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -84,6 +85,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ),
                         ),
+                        verticalSpacing(18),
+                        AppTextButton(buttonText: 'Login', onPressed: () {}),
                       ],
                     ),
                   ),
