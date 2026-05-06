@@ -92,11 +92,33 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ),
                         ),
-                        verticalSpacing(18),
+                        verticalSpacing(40),
+                        Row(
+                          children: [
+                            Expanded(
+                              child: Divider(color: ColorsManger.lightGrey),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8.0,
+                              ),
+                              child: Expanded(
+                                child: Text(
+                                  "Or sing in with",
+                                  style: TextStyles.font14DarkGrey400Weight,
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              child: Divider(color: ColorsManger.darkGrey),
+                            ),
+                          ],
+                        ),
+                        verticalSpacing(40),
                         AppTextButton(buttonText: 'Login', onPressed: () {}),
                         verticalSpacing(18),
                         TermsAndPolicyText(),
-                        verticalSpacing(18),
+                        verticalSpacing(20),
                         AlreadyHaveAccountText(),
                       ],
                     ),

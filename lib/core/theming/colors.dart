@@ -8,4 +8,5 @@ class ColorsManger {
   static final Color darkBlue = Color(0xFF242424);
   static final Color offWhite = Color(0xFFFDFDFF);
   static final Color lighterGrey = Color(0xFFEDEDED);
+  static final Color darkGrey = Color(0xFF9E9E9E);
 }

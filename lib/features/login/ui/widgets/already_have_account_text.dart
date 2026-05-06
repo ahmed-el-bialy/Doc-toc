@@ -10,13 +10,10 @@ class AlreadyHaveAccountText extends StatelessWidget {
     return RichText(
       textAlign: TextAlign.center,
       text: TextSpan(
-        style: TextStyles.font15LightGrey400Weight,
+        style: TextStyles.font14darkBlue400Weight,
         children: [
           TextSpan(text: "Already have an account yet? "),
-          TextSpan(
-            text: "Sign Up ",
-            style: TextStyles.font15MainBlue600Weight,
-          ),
+          TextSpan(text: "Sign Up ", style: TextStyles.font15MainBlue600Weight),
         ],
       ),
     );

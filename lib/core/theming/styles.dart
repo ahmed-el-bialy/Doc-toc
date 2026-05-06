@@ -39,6 +39,12 @@ class TextStyles {
     color: ColorsManger.mainBlue,
   );
 
+  static TextStyle font14DarkGrey400Weight = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w400,
+    color: ColorsManger.darkGrey,
+  );
+
   static TextStyle font15Grey400Weight = TextStyle(
     fontSize: 15.sp,
     fontWeight: FontWeight.w400,
