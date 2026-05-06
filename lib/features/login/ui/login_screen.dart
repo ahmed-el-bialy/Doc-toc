@@ -93,6 +93,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           ),
                         ),
                         verticalSpacing(40),
+                        AppTextButton(buttonText: 'Login', onPressed: () {}),
+                        verticalSpacing(40),
                         Row(
                           children: [
                             Expanded(
@@ -114,11 +116,75 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                           ],
                         ),
-                        verticalSpacing(40),
-                        AppTextButton(buttonText: 'Login', onPressed: () {}),
-                        verticalSpacing(18),
-                        TermsAndPolicyText(),
+                        verticalSpacing(30),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8.0,
+                              ),
+                              child: Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadiusGeometry.circular(
+                                    16.r,
+                                  ),
+                                ),
+                                elevation: 1,
+                                color: ColorsManger.lighterGrey,
+                                child: IconButton(
+                                  onPressed: () {},
+                                  icon: Image.asset(
+                                    "assets/images/google_logo.png",
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8.0,
+                              ),
+                              child: Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadiusGeometry.circular(
+                                    16.r,
+                                  ),
+                                ),
+                                elevation: 1,
+                                color: ColorsManger.lighterGrey,
+                                child: IconButton(
+                                  onPressed: () {},
+                                  icon: Image.asset(
+                                    "assets/images/facebook_logo.png",
+                                  ),
+                                ),
+                              ),
+                            ),
+                            Padding(
+                              padding: const EdgeInsets.symmetric(
+                                horizontal: 8.0,
+                              ),
+                              child: Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadiusGeometry.circular(
+                                    16.r,
+                                  ),
+                                ),
+                                elevation: 1,
+                                color: ColorsManger.lighterGrey,
+                                child: IconButton(
+                                  onPressed: () {},
+                                  icon: Image.asset(
+                                    "assets/images/apple_logo.png",
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
                         verticalSpacing(20),
+                        TermsAndPolicyText(),
+                        verticalSpacing(22),
                         AlreadyHaveAccountText(),
                       ],
                     ),
