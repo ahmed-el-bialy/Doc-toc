@@ -59,6 +59,8 @@ dependencies:
   flutter_svg: ^2.2.4
   # A flutter plugin for adapting screen and font size.Guaranteed to look good on different models.
   flutter_screenutil: ^5.9.3
+  # Flutter plugin for Google Sign-In.
+  google_sign_in: ^7.2.0
 
 dev_dependencies:
   flutter_test:
@@ -85,7 +87,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-     - assets/images/
+    - assets/images/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
